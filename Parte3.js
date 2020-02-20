@@ -15,11 +15,21 @@ const obtenerNotaPromedio = (notas, alumnos) => {
 };
 
 const obtenerNotaMayor = notas => {
-  return Math.max(notas);
+  return Math.max(...notas);
 };
 
 const obtenerNotaMenor = notas => {
-  return Math.min(notas);
+  return Math.min(...notas);
+};
+
+const alumnosAprobados = notas => {
+  let numeroAprobados = 0;
+  notas.forEach(nota => {
+    if (nota >= 3) {
+      numeroAprobados++;
+    }
+  });
+  return numeroAprobados;
 };
 
 let notasPromedio = obtenerNotaPromedio(notas, numeroAlumnos);
@@ -28,6 +38,8 @@ let notaMasAlta = obtenerNotaMayor(notas);
 
 let notaMasBaja = obtenerNotaMenor(notas);
 
+let aprobados = alumnosAprobados(notas);
+
 console.log(
-  `Promedio del grupo: ${notasPromedio}\n Nota más alta: ${notaMasAlta}\n Nota más baja: ${notaMasBaja}`
+  `Promedio del grupo: ${notasPromedio}\nNota más alta: ${notaMasAlta}\nNota más baja: ${notaMasBaja}\nAlumnos aprobados: ${aprobados}`
 );
