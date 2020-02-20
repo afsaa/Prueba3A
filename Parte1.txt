@@ -1,0 +1,20 @@
+1. Encontrar numero faltante en arreglo no ordenado [0...100] con un número faltante.
+    * Busqueda binaria
+    - Ordenar el arreglo
+    - Si n >= 50 creo un arreglo nuevo a partir del existente [50...100] sino creo un arreglo nuevo a partir del existente [0...49]
+    - Si n >= 25 repetir el proceso hasta encontrar el número.
+
+2. Encontrar el primer elemento repetido en un arreglo.
+    - Recorrer el arreglo con dos ciclos
+    - El ciclo de afuera seleccionará uno por uno los elementos de arreglo
+    - El ciclo de adentro comparará el elemento encontrado en este con el encontrado en el ciclo de afuera. Si son iguales retornará el elemento del ciclo de afuera.
+
+3. Reversar el orden de un arreglo de enteros.
+    - Crear un nuevo arreglo vacío
+    - Crear un ciclo en el cual se recorra el arreglo dado.
+    - Dentro del ciclo sacar el último elemento del arreglo dado y meterlo como último elemento en el nuevo arreglo. Hasta que el arreglo dado quede vacío.
+
+7. Contar consonantes de una cadena de texto.
+    - Convertir la cadena de texto a un arreglo de caracteres
+    - Usar un ciclo para recorrer el arreglo de caracteres
+    - Usar un ciclo dentro del ciclo de caracteres para recorrer el arreglo de consonantes, comparar y sumar en una variable si los elementos hallados son iguales.

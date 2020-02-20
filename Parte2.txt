@@ -1,0 +1,21 @@
+1. Flujo de trabajo de TDD
+    c. Requisitos → Arquitectura de software → Pruebas unitarias → Desarrollo de
+software → Revisión de código → Pruebas funcionales → Soporte.
+
+2. Que tipo de lenguaje es Ruby y en que se diferencia con Java?
+    Ruby es un lenguaje interpretado con tipado dinámico que usa concurrencia.
+    En comparación con Ruby, Java puede ser ejecutado e interpretado usando varios nucleos al mismo tiempo. Además Java es fuertemente tipado. En cuanto a rendimiento, Ruby es el claro ganador debido a que Java tiene que generar el código de bytes antes de poder ejecutar el código.
+
+3. Que son los microservicios?
+    Es un estilo de arquitectura que estructura una aplicación como un conjunto de servicios independientes, altamente mantibles, testeables, desplegables de forma independiente.
+
+4. Por que serían beneficiosos los microservicios para un organización?
+    Los microservicios habilitan una agil, frecuente y confiable entrega de aplicaciones grandes y complejas. Además le permite a la organización evolucionar su stack tecnológico.
+
+5. Por que no serían beneficiosos los microservicios para un organización?
+    Las aplicaciones existentes en una organización pueden ser muy costosas de migrar a una arquitectura de microservicios porque requieren cambios culturales, cambios sobre la red y comunicaciones, además cuentan con una alta complejidad que depende del número de servicios. Por lo tanto la estrategia sugerida es que las aplicaciones bajo esta arquitectura convivan con las ya existentes.
+
+7. ¿Por qué podría ser más compleja la comunicación por una red en una arquitectura
+por microservicios?
+    Los servicios necesitan comunicarse entre ellos, esto crea altos costos asociados a la latencia y procesamiento de datos a comparación de arquitecturas tradicionales.
+
